@@ -1,0 +1,9 @@
+DHCP 动态主机配置 Dynamic Host Configuration Protocol
+  自动为主机配置ip地址
+
+  过程
+    新加入的主机通过广播的形式通知 DHCP Server 请求分配ip
+    DHCP 以mac地址区分是否新人 然后返回分配的ip
+    主机接收这个ip DHCP广播新加入的主机
+
+    回收ip的时候 主机直接访问DHCP Server 然后更新ip列表即可

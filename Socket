@@ -1,0 +1,27 @@
+Socket
+  传输层的编程
+  所以可以选择Ipv4 或者 Ipv6 也可以选择UDP或者TCP
+
+Socket-TCP编程
+  bind ip
+    一个主机可以有多个网卡
+    绑定ip选择监听多个或者一个网卡
+  listen
+    有了ip就可以监听
+    监听维护2个队列
+      1 已经建立了连接
+      2 还未建立连接 三次握手未完成
+
+  accept
+    已经建立连接的就可以使用accept就收请求
+    接收之后会返回另一个socket用于传输数据
+    也就是 建立连接的socket和传输数据的socket不同
+      nio 模型??
+
+Socket-UDP
+  同样需要绑定ip
+
+维护多连接
+  socket - epoll
+  socket变化通知同一个监听线程
+
